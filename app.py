@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 import requests
 
-#api 8265bd1679663a7ea12ac168da84d2e8
+
 
 def fetch_poster(movie_id):
     response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=8ef160a1701ab9819744d293813b8165'.format(movie_id))
@@ -65,5 +65,4 @@ if st.button('Recommend'):
         st.text(names[4])
         st.image(posters[4])
 
-    # for rec in names:
-    #     st.write(rec)
+  
